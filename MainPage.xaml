@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_Module05_Exercise01.MainPage"
+             BackgroundColor="#f0f0f0">
+
+
+     <StackLayout Margin="10">
+
+        <Label Text="Welcome to LuxxeCars!"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="nameEntry"
+               Placeholder="Enter your name"
+               Margin="0, 20, 0, 0"/>
+
+        <DatePicker x:Name="datePicker"
+                    Margin="0, 20, 0, 0"/>
+
+        <Label Text="Do you want to receive our newsletter?"
+               Margin="0, 20, 0, 0"/>
+
+        <Switch x:Name="newsletterSwitch"/>
+
+        <Button Text="Submit"
+                Clicked="OnSubmitButtonClicked"
+                Margin="0, 20, 0, 0"/>
+
+    </StackLayout>
+
+</ContentPage>
